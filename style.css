@@ -1,0 +1,173 @@
+/* Resetări globale și fonturi */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Containerul principal pentru centrarea paginii pe ecran */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Stiluri pentru Header (Zona Introductivă) */
+header {
+    text-align: center;
+    border-bottom: 2px solid #eef2f5;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 28px;
+}
+
+header p {
+    margin: 8px 0 0 0;
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+/* Meniul de navigație cu ancore */
+nav {
+    background-color: #2c3e50;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+/* Formatarea secțiunilor din Main */
+section {
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eef2f5;
+}
+
+section h2 {
+    color: #2980b9;
+    font-size: 20px;
+    margin-top: 0;
+    border-left: 4px solid #2980b9;
+    padding-left: 10px;
+}
+
+/* Aranjarea elementelor din secțiunea About (Text + Imagine) */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+/* Stilarea imaginii de profil */
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2980b9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stiluri pentru liste (Educație) */
+ol {
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 12px;
+}
+
+/* Stiluri pentru componenta Aside */
+aside {
+    background-color: #e8f4f8;
+    border-left: 4px solid #3498db;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 0 6px 6px 0;
+}
+
+aside h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+aside .quote {
+    margin-top: 15px;
+    color: #555;
+    border-top: 1px dashed #bce1f2;
+    padding-top: 10px;
+}
+
+/* Stiluri pentru Footer */
+footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 2px solid #eef2f5;
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 6px 0;
+}
+
+footer a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivitate pentru ecrane mici (Mobile) */
+@media (max-width: 600px) {
+    .about-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    
+    nav a {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+    
+    .container {
+        margin: 10px;
+        padding: 20px;
+    }
+}
