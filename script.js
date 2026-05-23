@@ -95,3 +95,24 @@ function submitForm(event) {
 
     event.target.reset();
 }
+
+const butonTema = document.getElementById("theme-toggle");
+if (butonTema) {
+    butonTema.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+        
+        if (document.body.classList.contains("dark-mode")) {
+            butonTema.textContent = "☀️ Light Mode";
+        } else {
+            butonTema.textContent = "🌙 Dark Mode";
+        }
+    });
+}
+
+const titluri = document.querySelectorAll("main section h2");
+titluri.forEach(function (titlu) {
+    titlu.addEventListener("click", function () {
+        const sectiune = titlu.parentElement;
+        sectiune.classList.toggle("collapsed");
+    });
+});
