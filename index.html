@@ -57,11 +57,44 @@
         </aside>
 
         <footer id="contact">
-            <p>&copy; 2026 Tinjala Sergiu. Toate drepturile rezervate.</p>
-            <p>Contact: <a href="mailto:sergiu.tinjala@student.unitbv.ro">sergiu.tinjala@student.unitbv.ro</a></p>
+            <h2>Contactează-mă</h2>
+            <p>Dacă vrei să colaborăm sau ai o întrebare, folosește formularul de mai jos:</p>
+
+            <form id="contact-form">
+                <div class="form-group">
+                    <!-- 3. Etichetă legată prin for de id-ul inputului -->
+                    <label for="name">Nume:</label>
+                    <!-- 2.a Câmpul pentru nume -->
+                    <input type="text" id="name" name="name" required placeholder="Introduceți numele dvs.">
+                </div>
+
+                <div class="form-group">
+                    <!-- 3. Etichetă legată prin for de id-ul inputului -->
+                    <label for="email">Email:</label>
+                    <!-- 2.b Câmpul pentru email -->
+                    <input type="email" id="email" name="email" required placeholder="nume@exemplu.com">
+                </div>
+
+                <div class="form-group">
+                    <!-- 3. Etichetă legată prin for de id-ul textarea-ului -->
+                    <label for="message">Mesaj:</label>
+                    <!-- 2.c Câmpul pentru mesaj -->
+                    <textarea id="message" name="message" rows="4" required placeholder="Scrieți mesajul aici..."></textarea>
+                </div>
+
+                <!-- 4. Butonul de trimitere -->
+                <button type="submit" class="btn-submit">Trimite mesajul</button>
+            </form>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Popescu Andrei. Toate drepturile rezervate.</p>
+                <p>Email direct: <a href="mailto:andrei.popescu@student.universitate.ro">andrei.popescu@student.universitate.ro</a></p>
+            </div>
         </footer>
 
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
